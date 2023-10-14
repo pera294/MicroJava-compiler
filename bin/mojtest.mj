@@ -1,0 +1,55 @@
+// mojtest
+
+program mojtest
+
+	int niz[] , niz2[];
+	int curr;
+	
+{
+	int sum(int z, int d)
+	{
+		return z + d;
+	}
+	
+	bool verify() {
+		print('v');
+		return false;
+	}
+	
+	void cao(){
+		print(eol);
+		print('c');
+		print('a');
+		print('o');
+	}
+	
+	
+	void main()	
+		int bodovi;
+		bool bt;
+	{
+	
+		
+		niz = new int[4];
+		niz[0]=1;
+		niz[1]=2;
+		niz[2]=3;
+		niz[3]=4;
+		
+		niz2 = niz.map(curr => curr * 3);
+		
+		print(niz2[0]); //3
+		print(niz2[1]); //6 
+		print(niz2[2]); //9
+		print(niz2[3]); //12
+		
+		
+		bodovi = sum(3 , sum( niz[0] ,1));
+		print(bodovi);
+		
+		cao();
+			
+	}
+}
+
+
